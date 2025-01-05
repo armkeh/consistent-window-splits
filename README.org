@@ -1,0 +1,49 @@
+#+Title: Consistent Window Splits
+#+Author: Mark Armstrong
+#+Description: An Emacs package to enforce consistent window splitting behavior
+#+Description: across different screen sizes.
+
+* Preamble                                      :ignore:
+
+~consistent-window-splits~ is an Emacs package to enforce
+consistent window splitting behavior across different screen sizes.
+
+It is primarily useful when using Emacs on a widescreen or ultrawide
+monitor in fullscreen mode, if you find that
+the default behavior of Emacs results in too many horizontal splits.
+(E.g., you prefer using 2 columns of windows, but Emacs often
+ opens a 3rd of even 4th.)
+
+* Features
+
+Emacs primarily uses two variables per dimension (horizontal/vertical)
+for deciding how to split windows:
+- ~split-width-threshold~ & ~split-height-threshold~:
+  The minimum width/height (in columns/rows) at which a window
+  may be split by the function ~split-window-sensibly~,
+  which is commonly called implicitely when a new buffer is opened by
+  a command or process (for instance, ~describe-symbol~, ~magit~, ).
+- ~window-min-width~ & ~window-min-height~:
+  The absolute minimum width/height (in columns/rows) of any window;
+  /any/ split (not just sensible splits) which would result
+  in a window becoming less than this size will not be allowed
+  (including manual splits requested by the user, e.g.,
+   with ~C-x 2~ or ~C-x 3~).
+
+~consistent-window-splits~ provides functions to override those values
+in order to prevent undesired splitting behavior,
+and also includes an option to add a function to the ~window-size-change-functions~
+which automatically update those values appropriately
+when the frame (OS window) size changes.
+
+* Installation
+
+* Usage
+
+* Related packages
+
+* License
+
+Distributed under the GNU General Public License, version 3.
+
+See [[./LICENSE][LICENSE]] for more information.
