@@ -3,8 +3,6 @@
 #+Description: An Emacs package to enforce consistent window splitting behavior
 #+Description: across different screen sizes.
 
-* Preamble                                      :ignore:
-
 ~consistent-window-splits~ is an Emacs package to enforce
 consistent window splitting behavior across different screen sizes.
 
