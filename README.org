@@ -6,6 +6,14 @@
 ~consistent-window-splits~ is an Emacs package to enforce
 consistent window splitting behavior across different screen sizes.
 
+The enforcement this package puts on window splitting is opinionated;
+it is mainly intended to control automatic splitting of windows,
+but it can also prevent the user from making manual splits.
+This package may not be suitable if you find being prevented from
+arbitrarily splitting windows to be irritating.
+# TODO: Functions are included to toggle the enforcement and allow
+# the user to manually split the window as desired, if needed.
+
 It is primarily useful when using Emacs on a widescreen or ultrawide
 monitor in fullscreen mode, if you find that
 the default behavior of Emacs results in too many horizontal splits.
