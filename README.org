@@ -44,7 +44,17 @@ when the frame (OS window) size changes.
 
 * Installation
 
+CLone this repository and add it to your ~load-path~, or
+alternatively use [[https://github.com/dimitri/el-get][el-get]] to manage the installation.
+
 * Usage
+
+To enable automatic consistent window splitting behavior,
+add this to your init:
+#+begin_src emacs-lisp
+(consistent-window-splits-automatically-optimize)
+#+end_src
+It will add the automation to the ~window-size-change-functions~.
 
 * Related packages
 
