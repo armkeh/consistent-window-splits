@@ -58,6 +58,12 @@ It will add the automation to the ~window-size-change-functions~.
 
 * Related packages
 
+- [[https://github.com/daichirata/emacs-rotate][emacs-rotate.el]]: Provides functions to "rotate" windows into predefined layouts.
+  A less opinionated, but not fully automatic, approach to solving
+  annoying window splitting behavior.
+- [[https://github.com/roman/golden-ratio.el][golden-ratio.el]]: Automatically resize windows using the golden ratio.
+  Particularly useful to maximize space for the active window on smaller screens.
+
 * License
 
 Distributed under the GNU General Public License, version 3.
