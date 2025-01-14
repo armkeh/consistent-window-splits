@@ -117,6 +117,11 @@ their default settings."
 Updated when the `window-size-change-functions' are run.")
 
 (defun consistent-window-splits-automatically-optimize ()
+
+  ;; Optimize now
+  (consistent-window-splits-optimize)
+
+  ;; And re-optimize when window size changes (if observed frame width has changed)
   (add-to-list
    'window-size-change-functions
    ;; TODO: Define this as a function, add a function to remove it from the size change functions
